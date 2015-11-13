@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0cd-Yx-dXG"/>
+                        <viewControllerLayoutGuide type="bottom" id="DHm-40-AbR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="账户" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v0J-17-mLS">
+                                <rect key="frame" x="85" y="104" width="150" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4fY-pJ-6rR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ryb-1D-QEy">
+                                <rect key="frame" x="85" y="207" width="150" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="N76-Jv-aCA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvZ-27-fXc">
+                                <rect key="frame" x="137" y="307" width="46" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AC9-5V-Li6"/>
+                                </constraints>
+                                <state key="normal" title="保存"/>
+                                <connections>
+                                    <action selector="saveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UAb-na-yha"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAa-JK-pCT">
+                                <rect key="frame" x="137" y="388" width="46" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Hkr-rJ-68a"/>
+                                </constraints>
+                                <state key="normal" title="获取"/>
+                                <connections>
+                                    <action selector="getAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x3L-6L-bpP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QAa-JK-pCT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="117" id="5KT-Pd-LwK"/>
+                            <constraint firstItem="QAa-JK-pCT" firstAttribute="top" secondItem="cvZ-27-fXc" secondAttribute="bottom" constant="51" id="Ay3-eX-imR"/>
+                            <constraint firstItem="cvZ-27-fXc" firstAttribute="top" secondItem="Ryb-1D-QEy" secondAttribute="bottom" constant="70" id="DKY-Ta-s8Y"/>
+                            <constraint firstItem="v0J-17-mLS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="65" id="J9c-W5-Zon"/>
+                            <constraint firstItem="Ryb-1D-QEy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="65" id="RTL-jf-NFJ"/>
+                            <constraint firstItem="v0J-17-mLS" firstAttribute="top" secondItem="0cd-Yx-dXG" secondAttribute="bottom" constant="84" id="UKO-vf-OyJ"/>
+                            <constraint firstItem="DHm-40-AbR" firstAttribute="top" relation="lessThanOrEqual" secondItem="QAa-JK-pCT" secondAttribute="bottom" constant="150" id="hrl-r2-yca"/>
+                            <constraint firstItem="cvZ-27-fXc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="117" id="jy8-LK-hlp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="v0J-17-mLS" secondAttribute="trailing" constant="65" id="kIF-5e-EJR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ryb-1D-QEy" secondAttribute="trailing" constant="65" id="lan-Pu-3No"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cvZ-27-fXc" secondAttribute="trailing" constant="117" id="nsA-aB-N9i"/>
+                            <constraint firstItem="Ryb-1D-QEy" firstAttribute="top" secondItem="v0J-17-mLS" secondAttribute="bottom" constant="73" id="oEE-je-OJp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QAa-JK-pCT" secondAttribute="trailing" constant="117" id="yAQ-26-uFl"/>
+                        </constraints>
+                        <connections>
+                            <action selector="touchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="wWR-A7-jvJ"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="nameTF" destination="v0J-17-mLS" id="P1b-8c-cG9"/>
+                        <outlet property="passTF" destination="Ryb-1D-QEy" id="qqe-k7-jVS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181" y="406"/>
+        </scene>
+    </scenes>
+</document>
